@@ -4,7 +4,7 @@ const mongoURI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/example"
 
 
 const datasourceConnect = () => {
-    mongoose.connect(mongoURI, { useUnifiedTopology: true })
+    mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
     mongoose.connection.on('connected', () => {
         console.log(chalk.green.inverse('MongoDB connection established'))
     })
