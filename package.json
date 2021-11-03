@@ -37,7 +37,7 @@
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.7",
     "morgan": "~1.9.1",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.9.0",
